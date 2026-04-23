@@ -10,7 +10,7 @@ public class ConexionDB {
             return DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/uniajc",
                 "root",
-                "1234"
+                "Juan0328"
             );
         } catch (Exception e) {
             System.out.println("Error de conexión a la BD");
