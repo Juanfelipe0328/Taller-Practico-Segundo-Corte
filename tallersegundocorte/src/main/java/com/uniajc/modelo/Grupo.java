@@ -7,6 +7,7 @@ public class Grupo {
     public String aula;
     public String horario;
 
+    
     public Grupo(int id, int m, int d, String a, String h) {
         this.id = id;
         idMateria = m;
