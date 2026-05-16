@@ -22,4 +22,14 @@ public class GrupoController {
     public void listar() {
         vista.mostrar(service.listar());
     }
+
+    // --- MÉTODOS PARA LA INTERFAZ GRÁFICA ---
+    
+    public void crearDesdeGrafico(int id, int idMateria, int idDocente, String aula, String horario) {
+        service.crear(new Grupo(id, idMateria, idDocente, aula, horario));
+    }
+
+    public java.util.List<Grupo> listarParaGrafico() {
+        return service.listar();
+    }
 }

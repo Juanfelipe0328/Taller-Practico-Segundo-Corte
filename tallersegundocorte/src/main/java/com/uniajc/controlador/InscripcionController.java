@@ -22,4 +22,12 @@ public class InscripcionController {
     public void listar() {
         vista.mostrar(service.listar());
     }
+    
+    public void crearDesdeGrafico(int id, int idEstudiante, int idGrupo, float nota, String estado) {
+        service.crear(new InscripcionCurso(id, idEstudiante, idGrupo, nota, estado));
+    }
+
+    public java.util.List<InscripcionCurso> listarParaGrafico() {
+        return service.listar();
+    }
 }

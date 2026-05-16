@@ -20,4 +20,13 @@ public class MateriaController {
     public void listar() {
         vista.mostrar(service.listar());
     }
+
+    
+    public void crearDesdeGrafico(int id, String nombre, int creditos) {
+        service.crear(new Materia(id, nombre, creditos));
+    }
+
+    public java.util.List<Materia> listarParaGrafico() {
+        return service.listar();
+    }
 }

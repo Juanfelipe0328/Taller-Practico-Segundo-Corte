@@ -21,4 +21,13 @@ public class EstudianteController {
     public void listar() {
         vista.mostrar(service.listar());
     }
+
+  public void crearDesdeGrafico(int id, String nombre, String apellido, String email) {
+    service.crear(new Estudiante(id, nombre, apellido, email));
+   }
+
+  public java.util.List<Estudiante> listarParaGrafico() {
+    return service.listar();
+  }
+
 }
